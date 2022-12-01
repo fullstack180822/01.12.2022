@@ -1,0 +1,14 @@
+Table Lecturers {
+  id bigint pk
+  name varchar 
+  title varchar 
+  car_id bigint [ref: - Cars.id] 
+}
+
+table Cars {
+  id bigint
+  brand varchar 
+  model varchar
+  year integer
+  color varchar
+}
